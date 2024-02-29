@@ -127,6 +127,8 @@ const PropiedadesFiltradasPage = () => {
     }
   };
 
+
+  // se realiza cambio
   const handleDownloadCSV = () => {
     try {
       const csvData = convertToCSV(propiedades);
