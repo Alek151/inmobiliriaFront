@@ -7,7 +7,7 @@ const Home = ({ username }) => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    navigate('/', { replace: true });
+    navigate('/login', { replace: true });
   };
 
   return (
@@ -23,7 +23,7 @@ const Home = ({ username }) => {
                 <Link className="nav-link" to="/user/upload">Subir CSV</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/user/filtro">Filtrar y descargar</Link>
+                <Link className="nav-link" to="/filtro">Filtrar y descargar</Link>
               </li>
               <li className="nav-item">
               </li>
